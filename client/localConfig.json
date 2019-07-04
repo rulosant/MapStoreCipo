@@ -54,6 +54,9 @@
         "maptype": {
             "mapType": "{context.mode === 'desktop' ? 'openlayers' : 'leaflet'}"
         },
+        "theme": {
+          "selectedTheme": {"id":"cipolletti"}
+        },
         "catalog": {
           "default": {
             "newService": {
@@ -81,6 +84,12 @@
                 "url": "https://gs-stable.geo-solutions.it/geoserver/gwc/service/wmts",
                 "type": "wmts",
                 "title": "GeoSolutions GeoServer WMTS",
+                "autoload": false
+              },
+              "catastro_rn_wms": {
+                "url": "http://catastro.rionegro.gov.ar/arcgis/services/Municipios/GC_201904_WMS_V7/MapServer/WMSServer?",
+                "type": "wms",
+                "title": "Catastro Rio Negro WMS",
                 "autoload": false
               }
             }
